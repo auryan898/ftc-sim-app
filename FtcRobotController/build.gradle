@@ -1,13 +1,21 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = 'greeter.Greeter'
+
+mainClassName = 'org.firstinspires.ftc.robotcontroller.internal.FtcRegister'
 dependencies {
-    compile project(':TeamCode') 
+    compile project(':TeamCode')
+    // https://mvnrepository.com/artifact/org.reflections/reflections
+    compile group: 'org.reflections', name: 'reflections', version: '0.9.11'
+
 }
+repositories {
+    mavenCentral()
+}
+
 jar {
     manifest {
         attributes('Implementation-Title': project.name,
-                   'Implementation-Version': project.version) //,
-                //    'Main-Class':"greeter.Greeter")
+                   'Implementation-Version': project.version,
+                    'Main-Class':"org.firstinspires.ftc.robotcontroller.internal.FtcRegister")
     }
 }

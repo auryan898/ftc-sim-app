@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Telemetry;
 
-public class OpMode {
-    public HardwareMap hardwareMap = new HardwareMap();
+public abstract class OpMode {
+    public HardwareMap hardwareMap = new HardwareMap("Robot.xml");
     public Gamepad gamepad1;
     public Gamepad gamepad2;
     public Telemetry telemetry;
@@ -13,6 +13,6 @@ public class OpMode {
 
     }
     public void init(){}
-    public void loop(){}
+    public abstract void loop();
     public void start(){}
 }

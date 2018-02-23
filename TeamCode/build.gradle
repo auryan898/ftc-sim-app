@@ -1,6 +1,6 @@
 apply plugin: 'java'
-apply plugin: 'application'
-//mainClassName = 'greeter.Greeter'
+//apply plugin: 'application'
+
 dependencies {
  compile project(':libs')
 }
@@ -8,6 +8,6 @@ jar {
     manifest {
         attributes('Implementation-Title': project.name,
                    'Implementation-Version': project.version) //,
-                   //'Main-Class':"greeter.Greeter")
+
     }
 }

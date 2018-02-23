@@ -1,12 +1,10 @@
 apply plugin: 'java'
-apply plugin: 'application'
-//mainClassName = 'greeter.Greeter'
-// dependencies {
-//     compile project(':FtcRobotController') 
-// }
+//apply plugin: 'application'
+
 dependencies {
     compile files('lib/FTCCompCTL.jar')
     compile files('lib/mscorlib.jar')
+//    compile fileTree(dir: 'lib', include: ['*.jar'])
 }
 jar {
     manifest {
