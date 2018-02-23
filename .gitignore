@@ -1,1 +1,11 @@
 build/
+.gradle
+*.class
+bin/
+gen/
+local.properties
+*.apk
+*.ap_
+*.iml
+.idea
+Thumbs.db
