@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+//mainClassName = 'greeter.Greeter'
+// dependencies {
+//     compile project(':FtcRobotController') 
+// }
+dependencies {
+    compile files('lib/FTCCompCTL.jar')
+    compile files('lib/mscorlib.jar')
+}
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                   'Implementation-Version': project.version) //,
+                   //'Main-Class':"greeter.Greeter")
+    }
+}

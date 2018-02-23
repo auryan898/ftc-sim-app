@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+//mainClassName = 'greeter.Greeter'
+dependencies {
+ compile project(':libs')
+}
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                   'Implementation-Version': project.version) //,
+                   //'Main-Class':"greeter.Greeter")
+    }
+}

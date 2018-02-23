@@ -2,12 +2,12 @@ apply plugin: 'java'
 apply plugin: 'application'
 mainClassName = 'greeter.Greeter'
 dependencies {
-    compile project(':greeting-library') 
+    compile project(':TeamCode') 
 }
 jar {
     manifest {
         attributes('Implementation-Title': project.name,
-                   'Implementation-Version': project.version,
-                   'Main-Class':"greeter.Greeter")
+                   'Implementation-Version': project.version) //,
+                //    'Main-Class':"greeter.Greeter")
     }
 }
