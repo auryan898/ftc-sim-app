@@ -3,7 +3,7 @@ package com.qualcomm.robotcore.hardware;
 import cli.System.*;
 
 import java.lang.String;
-// import cli.FTCCompCTL.*;
+// import cli.FtcCompCtl.*;
 
 public class DcMotor {
     int motPort;

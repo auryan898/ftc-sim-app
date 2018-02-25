@@ -2,9 +2,9 @@ apply plugin: 'java'
 //apply plugin: 'application'
 
 dependencies {
-    compile files('lib/FTCCompCTL.jar')
-    compile files('lib/mscorlib.jar')
-//    compile fileTree(dir: 'lib', include: ['*.jar'])
+    // compile files('../FtcCompCtl/jar/FTCCompCTL.jar')
+    // compile files('../FtcCompCtl/jar/mscorlib.jar')
+    compile fileTree(dir: '../FtcCompCtl/jar', include: ['*.jar'])
 }
 jar {
     manifest {

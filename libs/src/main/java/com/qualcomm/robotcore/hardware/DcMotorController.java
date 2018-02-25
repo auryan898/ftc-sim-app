@@ -1,6 +1,6 @@
 package com.qualcomm.robotcore.hardware;
 
-// import cli.FTCCompCTL.*;
+// import cli.FtcCompCtl.*;
 import cli.System.Object;
 
 public class DcMotorController {
