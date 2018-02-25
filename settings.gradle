@@ -8,8 +8,8 @@
  */
 
 rootProject.name = 'ftc-sim-app'
-include 'greeting-library'
-include 'greeter'
+//include 'greeting-library'
+//include 'greeter'
 include 'FtcRobotController'
 include 'libs'
 include 'TeamCode'

@@ -11,7 +11,9 @@ dependencies {
 repositories {
     mavenCentral()
 }
-
+run{
+    standardInput = System.in
+}
 jar {
     manifest {
         attributes('Implementation-Title': project.name,

@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.*;
 
 
 
-//@TeleOp(name = "SampleTest", group = "Competition2017-18")
+@TeleOp(name = "SampleTest", group = "Competition2017-18")
 @Autonomous(name = "Concept: NullOp", group = "Concept")
 //@Disabled
 public class SampleTest extends OpMode {
